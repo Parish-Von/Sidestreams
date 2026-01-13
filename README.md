@@ -1,4 +1,3 @@
-# Sidestreams
  (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/README.md b/README.md
 index 448a2af39d42d8c1b5765d30e80f55432f02590c..c89e24a382b0eab808183f3d1cc2952887faf8a1 100644
