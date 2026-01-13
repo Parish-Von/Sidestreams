@@ -1,0 +1,21 @@
+site_name: Sidestreams Wiki
+site_url: https://sidestreams.wiki/
+site_description: Sidestreams wiki powered by MkDocs.
+site_author: Sidestreams
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - content.action.edit
+    - content.code.copy
+
+repo_name: Sidestreams/wiki
+repo_url: https://github.com/Sidestreams/wiki
+edit_uri: edit/main/docs/
+
+nav:
+  - 首页: index.md
