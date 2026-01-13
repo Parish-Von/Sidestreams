@@ -1,9 +1,8 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/README.md b/README.md
-index 448a2af39d42d8c1b5765d30e80f55432f02590c..c89e24a382b0eab808183f3d1cc2952887faf8a1 100644
+index 448a2af39d42d8c1b5765d30e80f55432f02590c..711594534298b7d825169ca6c76c76cf5486e7a2 100644
 --- a/README.md
 +++ b/README.md
-@@ -1 +1,17 @@
+@@ -1 +1,40 @@
 -# Sidestreams
 \ No newline at end of file
 +# Sidestreams
@@ -23,6 +22,27 @@ index 448a2af39d42d8c1b5765d30e80f55432f02590c..c89e24a382b0eab808183f3d1cc29528
 +mkdocs serve
 +```
 +
- 
-EOF
-)
++## 复制即用（Copy-paste ready）
++
++将下列命令复制到终端即可初始化并推送：
++
++```bash
++git clone <your-repo-url>
++cd <your-repo-name>
++python -m venv .venv
++source .venv/bin/activate
++pip install mkdocs-material
++mkdocs serve
++```
++
++提交内容并触发部署：
++
++```bash
++git add docs mkdocs.yml
++
++git commit -m "Update wiki content"
++
++git push origin main
++```
++
+
